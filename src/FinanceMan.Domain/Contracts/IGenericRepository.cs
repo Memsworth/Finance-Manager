@@ -1,6 +1,6 @@
 ﻿namespace FinanceMan.Domain.Contracts;
 
-interface IGenericRepository<T>
+public interface IGenericRepository<T>
 {
     Task AddAsync(T entity);
 }

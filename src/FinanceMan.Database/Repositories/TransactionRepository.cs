@@ -1,5 +1,12 @@
-﻿namespace FinanceMan.Database.Repositories;
+﻿using FinanceMan.Domain;
+using FinanceMan.Domain.Contracts;
 
-class TransactionRepository
+namespace FinanceMan.Database.Repositories;
+
+public class TransactionRepository : ITransactionRepository
 {
+    public Task AddAsync(Transaction entity)
+    {
+        throw new NotImplementedException();
+    }
 }

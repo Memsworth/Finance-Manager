@@ -1,5 +1,8 @@
-﻿namespace FinanceMan.Shared.Contracts;
+﻿using FinanceMan.Domain;
 
-interface ITransactionService
+namespace FinanceMan.Shared.Contracts;
+
+public interface ITransactionService
 {
+    List<Transaction> GetTransactions();
 }

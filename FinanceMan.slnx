@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FinanceMan.Database/FinanceMan.Database.csproj" />
+    <Project Path="src/FinanceMan.Domain/FinanceMan.Domain.csproj" />
+    <Project Path="src/FinanceMan.Shared/FinanceMan.Shared.csproj" />
+    <Project Path="src/FinanceMan.Web/FinanceMan.Web.Client/FinanceMan.Web.Client.csproj" Id="fa353092-3ee7-4ea5-9fef-80ec906f043d" />
+    <Project Path="src/FinanceMan.Web/FinanceMan.Web/FinanceMan.Web.csproj" Id="d3e083bb-f631-4de9-bbe9-1b8bf417823a" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>
