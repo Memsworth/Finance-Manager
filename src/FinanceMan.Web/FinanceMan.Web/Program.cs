@@ -3,6 +3,8 @@ using FinanceMan.Web.Components;
 using FinanceMan.Database;
 using FinanceMan.Database.Repositories;
 using FinanceMan.Domain.Contracts;
+using FinanceMan.Shared.Contracts;
+using FinanceMan.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMudServices();
 builder.Services.AddDbContext<ApplicationDbContext>();
 builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

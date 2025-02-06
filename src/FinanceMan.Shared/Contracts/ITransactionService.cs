@@ -4,5 +4,5 @@ namespace FinanceMan.Shared.Contracts;
 
 public interface ITransactionService
 {
-    List<Transaction> GetTransactions();
+    Task<List<Transaction>> GetTransactionsById(int userId);
 }

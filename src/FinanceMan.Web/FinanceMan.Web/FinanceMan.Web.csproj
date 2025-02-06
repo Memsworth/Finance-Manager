@@ -12,6 +12,10 @@
     <ProjectReference Include="..\..\FinanceMan.Shared\FinanceMan.Shared.csproj" />
     <ProjectReference Include="..\FinanceMan.Web.Client\FinanceMan.Web.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

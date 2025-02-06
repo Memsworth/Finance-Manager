@@ -1,5 +1,9 @@
-﻿namespace FinanceMan.Shared.Contracts;
+﻿using Ardalis.Result;
+using FinanceMan.Shared.Dtos;
 
-interface IUserService
+namespace FinanceMan.Shared.Contracts;
+
+public interface IUserService
 {
+    public Task<Result> CreateUser(CreateUserDto userDto);
 }

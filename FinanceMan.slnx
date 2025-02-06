@@ -6,5 +6,7 @@
     <Project Path="src/FinanceMan.Web/FinanceMan.Web.Client/FinanceMan.Web.Client.csproj" Id="fa353092-3ee7-4ea5-9fef-80ec906f043d" />
     <Project Path="src/FinanceMan.Web/FinanceMan.Web/FinanceMan.Web.csproj" Id="d3e083bb-f631-4de9-bbe9-1b8bf417823a" />
   </Folder>
-  <Folder Name="/tests/" />
+  <Folder Name="/tests/">
+    <Project Path="tests/FinanceMan.Web.Test/FinanceMan.Web.Test.csproj" Id="49621345-51a4-4426-8b84-1c599792c8b9" />
+  </Folder>
 </Solution>
