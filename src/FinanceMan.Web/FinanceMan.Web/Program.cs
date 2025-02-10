@@ -5,6 +5,7 @@ using FinanceMan.Database.Repositories;
 using FinanceMan.Domain.Contracts;
 using FinanceMan.Shared.Contracts;
 using FinanceMan.Web.Services;
+using FinanceMan.Shared.Dtos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,12 +36,18 @@ else
 
 app.UseHttpsRedirection();
 
-
 app.UseAntiforgery();
-
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(FinanceMan.Web.Client._Imports).Assembly);
 
+
+app.MapPost("/api/register", async (IUserService userService, CreateUserDto userDto) =>
+{
+    var result = await userService.CreateUser(userDto);
+    if (result.IsSuccess)
+        return Results.Ok();
+    return Results.BadRequest();
+});
 app.Run();

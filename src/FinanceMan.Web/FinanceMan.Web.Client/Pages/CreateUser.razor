@@ -22,8 +22,13 @@
         };
     }
 
-    private void DoSomething()
+    private async Task DoSomething()
     {
-        
+        var cl = await httpClient.PostAsJsonAsync("/api/register", userDto, default);
+        var response = cl.IsSuccessStatusCode;
+
+        if (!response)
+            NavMan.Refresh();
+        NavMan.NavigateTo("/", true);
     }
 }

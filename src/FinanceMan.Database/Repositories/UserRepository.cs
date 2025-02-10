@@ -1,14 +1,15 @@
 ﻿using FinanceMan.Domain;
 using FinanceMan.Domain.Contracts;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 
 namespace FinanceMan.Database.Repositories;
 
 public class UserRepository(ApplicationDbContext dbContext) : IUserRepository
 {
-    public Task AddAsync(User entity)
+    public async Task AddAsync(User entity)
     {
+        await dbContext.Users.AddAsync(entity);
+        await dbContext.SaveChangesAsync();
         throw new NotImplementedException();
     }
 
