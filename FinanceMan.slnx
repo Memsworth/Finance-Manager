@@ -3,8 +3,8 @@
     <Project Path="src/FinanceMan.Database/FinanceMan.Database.csproj" />
     <Project Path="src/FinanceMan.Domain/FinanceMan.Domain.csproj" />
     <Project Path="src/FinanceMan.Shared/FinanceMan.Shared.csproj" />
-    <Project Path="src/FinanceMan.Web/FinanceMan.Web.Client/FinanceMan.Web.Client.csproj" Id="fa353092-3ee7-4ea5-9fef-80ec906f043d" />
-    <Project Path="src/FinanceMan.Web/FinanceMan.Web/FinanceMan.Web.csproj" Id="d3e083bb-f631-4de9-bbe9-1b8bf417823a" />
+    <Project Path="src/FinanceMan.Web/FinanceMan.Web.Client/FinanceMan.Web.Client.csproj" Id="b9ee9ba8-07a3-4b03-849d-f7397815a236" />
+    <Project Path="src/FinanceMan.Web/FinanceMan.Web/FinanceMan.Web.csproj" Id="7269a15a-4320-4dfc-9274-6dff35cd04e9" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/FinanceMan.Web.Test/FinanceMan.Web.Test.csproj" Id="49621345-51a4-4426-8b84-1c599792c8b9" />

@@ -2,5 +2,5 @@
 
 public interface IUserRepository : IGenericRepository<User>
 {
-    Task<bool> IsUser(int id);
+    Task<bool> IsUserAsync(int id);
 }

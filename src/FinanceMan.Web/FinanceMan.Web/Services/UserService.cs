@@ -12,10 +12,9 @@ public class UserService(IUserRepository userRepository) : IUserService
     {
         var user = new User
         {
-            Balance = decimal.Zero,
             LastUpdate = DateTime.UtcNow,
+            Balance = decimal.Zero,
         };
-
         await userRepository.AddAsync(user);
         return Result.Success();
     }

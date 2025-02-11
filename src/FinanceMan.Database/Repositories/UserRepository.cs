@@ -13,6 +13,8 @@ public class UserRepository(ApplicationDbContext dbContext) : IUserRepository
         throw new NotImplementedException();
     }
 
-    public async Task<bool> IsUser(int id)
+    public async Task<bool> IsUserAsync(int id)
         => await dbContext.Users.AnyAsync(x => x.Id == id);
+    //public async Task<bool> IsUserAsync(string email) 
+       // => await dbContext.Users.AnyAsync(x => x.)
 }
